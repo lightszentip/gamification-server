@@ -46,7 +46,7 @@ DATABASES = {
         "NAME": "gamification",
         "USER": "game_manager",
         "PASSWORD": "django-gamification",
-        "HOST": "",
+        "HOST": "localhost",
         "PORT": "5432"
     }
 }
@@ -237,7 +237,7 @@ AUTHENTICATION_BACKENDS = [
     "account.auth_backends.UsernameAuthenticationBackend",
 ]
 
-CORS_ORIGIN_WHITELIST = ( '192.168.5.131:8000', 'localhost:8000', )
+CORS_ORIGIN_WHITELIST = ( '192.168.1.4:8000', 'localhost:8000', )
 CORS_ALLOW_METHODS = ( 'GET', 'POST', 'OPTIONS' )
 
 CACHES = {
